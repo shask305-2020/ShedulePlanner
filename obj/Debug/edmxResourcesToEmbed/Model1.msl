@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ExRaspisDBModelContainer" CdmEntityContainer="ExRaspisDBEntities">
+    <EntitySetMapping Name="NED">
+      <EntityTypeMapping TypeName="ExRaspisDBModel.NED">
+        <MappingFragment StoreEntitySet="NED">
+          <ScalarProperty Name="id_ned" ColumnName="id_ned" />
+          <ScalarProperty Name="NAIM" ColumnName="NAIM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PLAN">
+      <EntityTypeMapping TypeName="ExRaspisDBModel.PLAN">
+        <MappingFragment StoreEntitySet="PLAN">
+          <ScalarProperty Name="IDN" ColumnName="IDN" />
+          <ScalarProperty Name="IDP" ColumnName="IDP" />
+          <ScalarProperty Name="IDG" ColumnName="IDG" />
+          <ScalarProperty Name="IDD" ColumnName="IDD" />
+          <ScalarProperty Name="Ned_1" ColumnName="Ned_1" />
+          <ScalarProperty Name="Ned_2" ColumnName="Ned_2" />
+          <ScalarProperty Name="Ned_3" ColumnName="Ned_3" />
+          <ScalarProperty Name="Ned_4" ColumnName="Ned_4" />
+          <ScalarProperty Name="Ned_5" ColumnName="Ned_5" />
+          <ScalarProperty Name="Ned_6" ColumnName="Ned_6" />
+          <ScalarProperty Name="Ned_7" ColumnName="Ned_7" />
+          <ScalarProperty Name="Ned_8" ColumnName="Ned_8" />
+          <ScalarProperty Name="Ned_9" ColumnName="Ned_9" />
+          <ScalarProperty Name="Ned_10" ColumnName="Ned_10" />
+          <ScalarProperty Name="Ned_11" ColumnName="Ned_11" />
+          <ScalarProperty Name="Ned_12" ColumnName="Ned_12" />
+          <ScalarProperty Name="Ned_13" ColumnName="Ned_13" />
+          <ScalarProperty Name="Ned_14" ColumnName="Ned_14" />
+          <ScalarProperty Name="Ned_15" ColumnName="Ned_15" />
+          <ScalarProperty Name="Ned_16" ColumnName="Ned_16" />
+          <ScalarProperty Name="Ned_17" ColumnName="Ned_17" />
+          <ScalarProperty Name="Ned_18" ColumnName="Ned_18" />
+          <ScalarProperty Name="Ned_19" ColumnName="Ned_19" />
+          <ScalarProperty Name="Ned_20" ColumnName="Ned_20" />
+          <ScalarProperty Name="Ned_21" ColumnName="Ned_21" />
+          <ScalarProperty Name="Ned_22" ColumnName="Ned_22" />
+          <ScalarProperty Name="Ned_23" ColumnName="Ned_23" />
+          <ScalarProperty Name="Ned_24" ColumnName="Ned_24" />
+          <ScalarProperty Name="Ned_25" ColumnName="Ned_25" />
+          <ScalarProperty Name="Ned_26" ColumnName="Ned_26" />
+          <ScalarProperty Name="Ned_27" ColumnName="Ned_27" />
+          <ScalarProperty Name="Ned_28" ColumnName="Ned_28" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PLANtemp">
+      <EntityTypeMapping TypeName="ExRaspisDBModel.PLANtemp">
+        <MappingFragment StoreEntitySet="PLANtemp">
+          <ScalarProperty Name="IDN" ColumnName="IDN" />
+          <ScalarProperty Name="IDP" ColumnName="IDP" />
+          <ScalarProperty Name="IDG" ColumnName="IDG" />
+          <ScalarProperty Name="IDD" ColumnName="IDD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SPGRUP">
+      <EntityTypeMapping TypeName="ExRaspisDBModel.SPGRUP">
+        <MappingFragment StoreEntitySet="SPGRUP">
+          <ScalarProperty Name="IDG" ColumnName="IDG" />
+          <ScalarProperty Name="IDO" ColumnName="IDO" />
+          <ScalarProperty Name="MEMO" ColumnName="MEMO" />
+          <ScalarProperty Name="IDA" ColumnName="IDA" />
+          <ScalarProperty Name="IDP" ColumnName="IDP" />
+          <ScalarProperty Name="IG" ColumnName="IG" />
+          <ScalarProperty Name="IDF" ColumnName="IDF" />
+          <ScalarProperty Name="KURS" ColumnName="KURS" />
+          <ScalarProperty Name="IDV" ColumnName="IDV" />
+          <ScalarProperty Name="FINAL" ColumnName="FINAL" />
+          <ScalarProperty Name="DATNN" ColumnName="DATNN" />
+          <ScalarProperty Name="DATKK" ColumnName="DATKK" />
+          <ScalarProperty Name="kolStud" ColumnName="kolStud" />
+          <ScalarProperty Name="NAIM" ColumnName="NAIM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SPNAGR">
+      <EntityTypeMapping TypeName="ExRaspisDBModel.SPNAGR">
+        <MappingFragment StoreEntitySet="SPNAGR">
+          <ScalarProperty Name="IDN" ColumnName="IDN" />
+          <ScalarProperty Name="IDP" ColumnName="IDP" />
+          <ScalarProperty Name="IDG" ColumnName="IDG" />
+          <ScalarProperty Name="IDD" ColumnName="IDD" />
+          <ScalarProperty Name="IDT" ColumnName="IDT" />
+          <ScalarProperty Name="IDA" ColumnName="IDA" />
+          <ScalarProperty Name="CHSEM" ColumnName="CHSEM" />
+          <ScalarProperty Name="DATNN" ColumnName="DATNN" />
+          <ScalarProperty Name="DATKK" ColumnName="DATKK" />
+          <ScalarProperty Name="CH" ColumnName="CH" />
+          <ScalarProperty Name="IDGG" ColumnName="IDGG" />
+          <ScalarProperty Name="NAZNA" ColumnName="NAZNA" />
+          <ScalarProperty Name="Po_Zam" ColumnName="Po_Zam" />
+          <ScalarProperty Name="K_UR" ColumnName="K_UR" />
+          <ScalarProperty Name="IN" ColumnName="IN" />
+          <ScalarProperty Name="MEMO" ColumnName="MEMO" />
+          <ScalarProperty Name="CZP" ColumnName="CZP" />
+          <ScalarProperty Name="CDO" ColumnName="CDO" />
+          <ScalarProperty Name="CUR" ColumnName="CUR" />
+          <ScalarProperty Name="UR_DAY" ColumnName="UR_DAY" />
+          <ScalarProperty Name="CPL" ColumnName="CPL" />
+          <ScalarProperty Name="PRAKT" ColumnName="PRAKT" />
+          <ScalarProperty Name="WITHD" ColumnName="WITHD" />
+          <ScalarProperty Name="CZPD" ColumnName="CZPD" />
+          <ScalarProperty Name="PRAKD" ColumnName="PRAKD" />
+          <ScalarProperty Name="CURP" ColumnName="CURP" />
+          <ScalarProperty Name="UR_DAYP" ColumnName="UR_DAYP" />
+          <ScalarProperty Name="IDZ" ColumnName="IDZ" />
+          <ScalarProperty Name="IDNN" ColumnName="IDNN" />
+          <ScalarProperty Name="NO_CALC" ColumnName="NO_CALC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SPPRED">
+      <EntityTypeMapping TypeName="ExRaspisDBModel.SPPRED">
+        <MappingFragment StoreEntitySet="SPPRED">
+          <ScalarProperty Name="IDD" ColumnName="IDD" />
+          <ScalarProperty Name="KOD" ColumnName="KOD" />
+          <ScalarProperty Name="MEMO" ColumnName="MEMO" />
+          <ScalarProperty Name="TRUD" ColumnName="TRUD" />
+          <ScalarProperty Name="NAIM" ColumnName="NAIM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SPPREP">
+      <EntityTypeMapping TypeName="ExRaspisDBModel.SPPREP">
+        <MappingFragment StoreEntitySet="SPPREP">
+          <ScalarProperty Name="IDP" ColumnName="IDP" />
+          <ScalarProperty Name="IDK" ColumnName="IDK" />
+          <ScalarProperty Name="IDA" ColumnName="IDA" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="MEMO" ColumnName="MEMO" />
+          <ScalarProperty Name="TABNOM" ColumnName="TABNOM" />
+          <ScalarProperty Name="ADRESS" ColumnName="ADRESS" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+          <ScalarProperty Name="FAMIO" ColumnName="FAMIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UROKI">
+      <EntityTypeMapping TypeName="ExRaspisDBModel.UROKI">
+        <MappingFragment StoreEntitySet="UROKI">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DAT" ColumnName="DAT" />
+          <ScalarProperty Name="UR" ColumnName="UR" />
+          <ScalarProperty Name="IDP" ColumnName="IDP" />
+          <ScalarProperty Name="IDG" ColumnName="IDG" />
+          <ScalarProperty Name="IDGG" ColumnName="IDGG" />
+          <ScalarProperty Name="IDA" ColumnName="IDA" />
+          <ScalarProperty Name="IDD" ColumnName="IDD" />
+          <ScalarProperty Name="IDN" ColumnName="IDN" />
+          <ScalarProperty Name="IDR" ColumnName="IDR" />
+          <ScalarProperty Name="ZP" ColumnName="ZP" />
+          <ScalarProperty Name="MORE" ColumnName="MORE" />
+          <ScalarProperty Name="IDI" ColumnName="IDI" />
+          <ScalarProperty Name="IDNN" ColumnName="IDNN" />
+          <ScalarProperty Name="IDU" ColumnName="IDU" />
+          <ScalarProperty Name="DT" ColumnName="DT" />
+          <ScalarProperty Name="HAND" ColumnName="HAND" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CountUroki" FunctionName="Хранилище ExRaspisDBModel.CountUroki" />
+    <FunctionImportMapping FunctionImportName="CountUroki_Otchet_interval" FunctionName="Хранилище ExRaspisDBModel.CountUroki_Otchet_interval" />
+    <FunctionImportMapping FunctionImportName="MergePlan" FunctionName="Хранилище ExRaspisDBModel.MergePlan" />
+    <FunctionImportMapping FunctionImportName="pr_LoadGroup" FunctionName="Хранилище ExRaspisDBModel.pr_LoadGroup">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExRaspisDBModel.pr_LoadGroup_Result">
+          <ScalarProperty Name="IDG" ColumnName="IDG" />
+          <ScalarProperty Name="NAIM" ColumnName="NAIM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pr_LoadNagrGroup" FunctionName="Хранилище ExRaspisDBModel.pr_LoadNagrGroup">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExRaspisDBModel.pr_LoadNagrGroup_Result">
+          <ScalarProperty Name="IDG" ColumnName="IDG" />
+          <ScalarProperty Name="IDP" ColumnName="IDP" />
+          <ScalarProperty Name="IDD" ColumnName="IDD" />
+          <ScalarProperty Name="Преподаватель" ColumnName="Преподаватель" />
+          <ScalarProperty Name="Дисциплина" ColumnName="Дисциплина" />
+          <ScalarProperty Name="п_г" ColumnName="п/г" />
+          <ScalarProperty Name="Всего" ColumnName="Всего" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pr_LoadNagrPrepod" FunctionName="Хранилище ExRaspisDBModel.pr_LoadNagrPrepod">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExRaspisDBModel.pr_LoadNagrPrepod_Result">
+          <ScalarProperty Name="IDP" ColumnName="IDP" />
+          <ScalarProperty Name="IDG" ColumnName="IDG" />
+          <ScalarProperty Name="IDD" ColumnName="IDD" />
+          <ScalarProperty Name="Группа" ColumnName="Группа" />
+          <ScalarProperty Name="Дисциплина" ColumnName="Дисциплина" />
+          <ScalarProperty Name="п_г" ColumnName="п/г" />
+          <ScalarProperty Name="Всего" ColumnName="Всего" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pr_LoadPlan" FunctionName="Хранилище ExRaspisDBModel.pr_LoadPlan">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExRaspisDBModel.pr_LoadPlan_Result">
+          <ScalarProperty Name="Ned_1" ColumnName="Ned_1" />
+          <ScalarProperty Name="Ned_2" ColumnName="Ned_2" />
+          <ScalarProperty Name="Ned_3" ColumnName="Ned_3" />
+          <ScalarProperty Name="Ned_4" ColumnName="Ned_4" />
+          <ScalarProperty Name="Ned_5" ColumnName="Ned_5" />
+          <ScalarProperty Name="Ned_6" ColumnName="Ned_6" />
+          <ScalarProperty Name="Ned_7" ColumnName="Ned_7" />
+          <ScalarProperty Name="Ned_8" ColumnName="Ned_8" />
+          <ScalarProperty Name="Ned_9" ColumnName="Ned_9" />
+          <ScalarProperty Name="Ned_10" ColumnName="Ned_10" />
+          <ScalarProperty Name="Ned_11" ColumnName="Ned_11" />
+          <ScalarProperty Name="Ned_12" ColumnName="Ned_12" />
+          <ScalarProperty Name="Ned_13" ColumnName="Ned_13" />
+          <ScalarProperty Name="Ned_14" ColumnName="Ned_14" />
+          <ScalarProperty Name="Ned_15" ColumnName="Ned_15" />
+          <ScalarProperty Name="Ned_16" ColumnName="Ned_16" />
+          <ScalarProperty Name="Ned_17" ColumnName="Ned_17" />
+          <ScalarProperty Name="Ned_18" ColumnName="Ned_18" />
+          <ScalarProperty Name="Ned_19" ColumnName="Ned_19" />
+          <ScalarProperty Name="Ned_20" ColumnName="Ned_20" />
+          <ScalarProperty Name="Ned_21" ColumnName="Ned_21" />
+          <ScalarProperty Name="Ned_22" ColumnName="Ned_22" />
+          <ScalarProperty Name="Ned_23" ColumnName="Ned_23" />
+          <ScalarProperty Name="Ned_24" ColumnName="Ned_24" />
+          <ScalarProperty Name="Ned_25" ColumnName="Ned_25" />
+          <ScalarProperty Name="Ned_26" ColumnName="Ned_26" />
+          <ScalarProperty Name="Ned_27" ColumnName="Ned_27" />
+          <ScalarProperty Name="Ned_28" ColumnName="Ned_28" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pr_LoadPrepod" FunctionName="Хранилище ExRaspisDBModel.pr_LoadPrepod">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExRaspisDBModel.pr_LoadPrepod_Result">
+          <ScalarProperty Name="IDP" ColumnName="IDP" />
+          <ScalarProperty Name="FAMIO" ColumnName="FAMIO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

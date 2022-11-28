@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ExRaspisDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="NED">
+    <Key>
+      <PropertyRef Name="id_ned" />
+    </Key>
+    <Property Name="id_ned" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NAIM" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PLAN">
+    <Key>
+      <PropertyRef Name="IDN" />
+    </Key>
+    <Property Name="IDN" Type="Int32" Nullable="false" />
+    <Property Name="IDP" Type="Int32" Nullable="false" />
+    <Property Name="IDG" Type="Int32" Nullable="false" />
+    <Property Name="IDD" Type="Int32" Nullable="false" />
+    <Property Name="Ned_1" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_2" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_3" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_4" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_5" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_6" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_7" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_8" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_9" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_10" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_11" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_12" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_13" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_14" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_15" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_16" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_17" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_18" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_19" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_20" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_21" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_22" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_23" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_24" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_25" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_26" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_27" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Ned_28" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PLANtemp">
+    <Key>
+      <PropertyRef Name="IDN" />
+    </Key>
+    <Property Name="IDN" Type="Int32" Nullable="false" />
+    <Property Name="IDP" Type="Int32" Nullable="false" />
+    <Property Name="IDG" Type="Int32" Nullable="false" />
+    <Property Name="IDD" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SPGRUP">
+    <Key>
+      <PropertyRef Name="IDG" />
+      <PropertyRef Name="FINAL" />
+    </Key>
+    <Property Name="IDG" Type="Int32" Nullable="false" />
+    <Property Name="IDO" Type="Int32" />
+    <Property Name="MEMO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IDA" Type="Int32" />
+    <Property Name="IDP" Type="Int32" />
+    <Property Name="IG" Type="Int16" />
+    <Property Name="IDF" Type="Int32" />
+    <Property Name="KURS" Type="Int16" />
+    <Property Name="IDV" Type="Int32" />
+    <Property Name="FINAL" Type="Boolean" Nullable="false" />
+    <Property Name="DATNN" Type="DateTime" Precision="3" />
+    <Property Name="DATKK" Type="DateTime" Precision="3" />
+    <Property Name="kolStud" Type="Int32" />
+    <Property Name="NAIM" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SPNAGR">
+    <Key>
+      <PropertyRef Name="IDN" />
+      <PropertyRef Name="Po_Zam" />
+      <PropertyRef Name="PRAKT" />
+      <PropertyRef Name="WITHD" />
+      <PropertyRef Name="NO_CALC" />
+    </Key>
+    <Property Name="IDN" Type="Int32" Nullable="false" />
+    <Property Name="IDP" Type="Int32" />
+    <Property Name="IDG" Type="Int32" />
+    <Property Name="IDD" Type="Int32" />
+    <Property Name="IDT" Type="Int32" />
+    <Property Name="IDA" Type="Int32" />
+    <Property Name="CHSEM" Type="Int16" />
+    <Property Name="DATNN" Type="DateTime" Precision="3" />
+    <Property Name="DATKK" Type="DateTime" Precision="3" />
+    <Property Name="CH" Type="Int16" />
+    <Property Name="IDGG" Type="Byte" />
+    <Property Name="NAZNA" Type="Int16" />
+    <Property Name="Po_Zam" Type="Boolean" Nullable="false" />
+    <Property Name="K_UR" Type="Int16" />
+    <Property Name="IN" Type="Int32" />
+    <Property Name="MEMO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CZP" Type="Int16" />
+    <Property Name="CDO" Type="Int16" />
+    <Property Name="CUR" Type="Int16" />
+    <Property Name="UR_DAY" Type="Single" />
+    <Property Name="CPL" Type="Int16" />
+    <Property Name="PRAKT" Type="Boolean" Nullable="false" />
+    <Property Name="WITHD" Type="Boolean" Nullable="false" />
+    <Property Name="CZPD" Type="Int16" />
+    <Property Name="PRAKD" Type="Int16" />
+    <Property Name="CURP" Type="Int16" />
+    <Property Name="UR_DAYP" Type="Single" />
+    <Property Name="IDZ" Type="Int32" />
+    <Property Name="IDNN" Type="Int32" />
+    <Property Name="NO_CALC" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SPPRED">
+    <Key>
+      <PropertyRef Name="IDD" />
+    </Key>
+    <Property Name="IDD" Type="Int32" Nullable="false" />
+    <Property Name="KOD" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="MEMO" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="TRUD" Type="Int32" />
+    <Property Name="NAIM" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SPPREP">
+    <Key>
+      <PropertyRef Name="IDP" />
+    </Key>
+    <Property Name="IDP" Type="Int32" Nullable="false" />
+    <Property Name="IDK" Type="Int32" />
+    <Property Name="IDA" Type="Int32" />
+    <Property Name="IP" Type="Int16" />
+    <Property Name="MEMO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TABNOM" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ADRESS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PHONE" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="FAMIO" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UROKI">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="ZP" />
+      <PropertyRef Name="MORE" />
+      <PropertyRef Name="HAND" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="DAT" Type="DateTime" Precision="0" />
+    <Property Name="UR" Type="Int32" />
+    <Property Name="IDP" Type="Int32" />
+    <Property Name="IDG" Type="Int32" />
+    <Property Name="IDGG" Type="Int32" />
+    <Property Name="IDA" Type="Int32" />
+    <Property Name="IDD" Type="Int32" />
+    <Property Name="IDN" Type="Int32" />
+    <Property Name="IDR" Type="Int32" />
+    <Property Name="ZP" Type="Boolean" Nullable="false" />
+    <Property Name="MORE" Type="Boolean" Nullable="false" />
+    <Property Name="IDI" Type="Int32" />
+    <Property Name="IDNN" Type="Int32" />
+    <Property Name="IDU" Type="Int32" />
+    <Property Name="DT" Type="DateTime" Precision="3" />
+    <Property Name="HAND" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ExRaspisDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="NED" EntityType="Self.NED" />
+    <EntitySet Name="PLAN" EntityType="Self.PLAN" />
+    <EntitySet Name="PLANtemp" EntityType="Self.PLANtemp" />
+    <EntitySet Name="SPGRUP" EntityType="Self.SPGRUP" />
+    <EntitySet Name="SPNAGR" EntityType="Self.SPNAGR" />
+    <EntitySet Name="SPPRED" EntityType="Self.SPPRED" />
+    <EntitySet Name="SPPREP" EntityType="Self.SPPREP" />
+    <EntitySet Name="UROKI" EntityType="Self.UROKI" />
+    <FunctionImport Name="CountUroki" ReturnType="Collection(Int32)">
+      <Parameter Name="IDP" Mode="In" Type="Int32" />
+      <Parameter Name="IDG" Mode="In" Type="Int32" />
+      <Parameter Name="IDD" Mode="In" Type="Int32" />
+      <Parameter Name="DAT" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="CountUroki_Otchet_interval" ReturnType="Collection(Int32)">
+      <Parameter Name="IDP" Mode="In" Type="Int32" />
+      <Parameter Name="IDG" Mode="In" Type="Int32" />
+      <Parameter Name="IDD" Mode="In" Type="Int32" />
+      <Parameter Name="DAT_N" Mode="In" Type="DateTime" />
+      <Parameter Name="DAT_K" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="MergePlan" />
+    <FunctionImport Name="pr_LoadGroup" ReturnType="Collection(ExRaspisDBModel.pr_LoadGroup_Result)" />
+    <FunctionImport Name="pr_LoadNagrGroup" ReturnType="Collection(ExRaspisDBModel.pr_LoadNagrGroup_Result)">
+      <Parameter Name="IDG" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pr_LoadNagrPrepod" ReturnType="Collection(ExRaspisDBModel.pr_LoadNagrPrepod_Result)">
+      <Parameter Name="IDP" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pr_LoadPlan" ReturnType="Collection(ExRaspisDBModel.pr_LoadPlan_Result)">
+      <Parameter Name="IDP" Mode="In" Type="Int32" />
+      <Parameter Name="IDG" Mode="In" Type="Int32" />
+      <Parameter Name="IDD" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="pr_LoadPrepod" ReturnType="Collection(ExRaspisDBModel.pr_LoadPrepod_Result)" />
+  </EntityContainer>
+  <ComplexType Name="pr_LoadGroup_Result">
+    <Property Type="Int32" Name="IDG" Nullable="false" />
+    <Property Type="String" Name="NAIM" Nullable="true" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="pr_LoadNagrGroup_Result">
+    <Property Type="Int32" Name="IDG" Nullable="true" />
+    <Property Type="Int32" Name="IDP" Nullable="true" />
+    <Property Type="Int32" Name="IDD" Nullable="true" />
+    <Property Type="String" Name="Преподаватель" Nullable="true" MaxLength="255" />
+    <Property Type="String" Name="Дисциплина" Nullable="true" MaxLength="255" />
+    <Property Type="Byte" Name="п_г" Nullable="true" />
+    <Property Type="Int16" Name="Всего" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pr_LoadNagrPrepod_Result">
+    <Property Type="Int32" Name="IDP" Nullable="true" />
+    <Property Type="Int32" Name="IDG" Nullable="true" />
+    <Property Type="Int32" Name="IDD" Nullable="true" />
+    <Property Type="String" Name="Группа" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Дисциплина" Nullable="true" MaxLength="255" />
+    <Property Type="Byte" Name="п_г" Nullable="true" />
+    <Property Type="Int16" Name="Всего" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="pr_LoadPlan_Result">
+    <Property Type="String" Name="Ned_1" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_2" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_3" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_4" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_5" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_6" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_7" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_8" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_9" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_10" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_11" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_12" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_13" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_14" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_15" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_16" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_17" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_18" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_19" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_20" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_21" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_22" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_23" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_24" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_25" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_26" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_27" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Ned_28" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="pr_LoadPrepod_Result">
+    <Property Type="Int32" Name="IDP" Nullable="false" />
+    <Property Type="String" Name="FAMIO" Nullable="true" MaxLength="255" />
+  </ComplexType>
+</Schema>
