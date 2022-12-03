@@ -15,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ExRaspViewer.Classes;
+using ShedulePlanner.Model;
 
 namespace ShedulePlanner
 {
@@ -23,6 +24,7 @@ namespace ShedulePlanner
     /// </summary>
     public partial class MainWindow : Window
     {
+        /*
         private SqlConnection _connection;
         private ClassSqlDB data = new ClassSqlDB();
         private ClassOleDB oleDB = new ClassOleDB();
@@ -40,33 +42,29 @@ namespace ShedulePlanner
         private int tekNed = 4; //Текущая неделя
         private int state = 0;  //если 0, то данные сохранены, 1 - данные еще не сохранены
 
+        */
+
+
         public MainWindow()
         {
             InitializeComponent();
-            ConnOpen();
             LoadGroup();
-        }
-
-        private void ConnOpen()
-        {
-            _connection = new SqlConnection(Properties.Settings.Default.connection);
-            try
-            {
-                _connection.Open();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Не удалось установитьсвязь с БД\n" + ex.Message);
-            }
-            _connection.Close();
         }
 
         //Загрузка списка групп в ListBox
         private void LoadGroup()
         {
-            DataTable dt = data.LoadGroupTable();
-            
-            listGroup.DataContext= dt.DefaultView;
+            listGroup.Items.Clear();
+            listGroup.ItemsSource = ExRaspisDBEntities.GetContext().SPGRUP.ToList();
+            listGroup.DisplayMemberPath = "NAIM";
+            listGroup.SelectedValuePath = "IDG";
+            listGroup.Items.SortDescriptions.Clear();
+            listGroup.Items.SortDescriptions.Add(new System.ComponentModel.SortDescription("NAIM", System.ComponentModel.ListSortDirection.Ascending));
+        }
+
+        private void listGroup_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            MessageBox.Show(listGroup.SelectedValue.ToString());
         }
     }
 }

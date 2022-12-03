@@ -89,9 +89,7 @@
             <ListBox x:Name="listGroup" Grid.Row="1"
                      Margin="10"
                      Background="AliceBlue"
-                     ItemsSource="{Binding}"
-                     SelectedValuePath="{Binding IDG}"
-                     DisplayMemberPath="{Binding NAIM}"/>
+                     SelectionChanged="listGroup_SelectionChanged"/>
             <ListBox x:Name="listTeacher" Grid.Row="2"
                      Margin="10,5,10,10"
                      Background="AliceBlue"/>

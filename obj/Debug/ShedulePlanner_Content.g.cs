@@ -10,7 +10,7 @@
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("exraspisdb.mdf")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("exraspisdb_log.ldf")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model1.context.tt")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model1.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/basemodel.context.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/basemodel.tt")]
 
 
